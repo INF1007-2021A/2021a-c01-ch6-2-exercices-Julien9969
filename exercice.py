@@ -6,26 +6,60 @@ from matplotlib.colors import cnames
 
 def list_to_dict(some_list: list) -> dict:
     # TODO: Transformer la liste en dictionnaire, les éléments de la liste deviennent les clés et leur index deviennent les valeurs
+    diction={}
 
-    return {}
+    for element in some_list:
+        diction[element]=some_list.index(f"{element}")
+
+    return diction
 
 
 def color_name_to_hex(colors: list) -> list:
     # TODO: Trouver la valeur hex de chaque couleur dans la liste et créer une liste de tupple où le premier élément est le nom de la couleur et le deuxième est la valeur hex
+    list_tuple=[]
 
-    return []
+    for element in colors:
+
+        couleur_tuple=(element,cnames[element])
+        list_tuple.append(couleur_tuple)
+
+    return list_tuple
 
 
 def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
+    list_entier=[]
 
-    return []
+    for nb in range(0, 10001):
+        if nb>=15 and nb <=350:
+            continue
+
+        list_entier.append(nb)
+
+    return list_entier
 
 
 def compute_mse(model_dict: dict) -> dict:
     # TODO: Calculer l'erreur quadratique moyen pour chaque modèle. Retourner un dictionnaire contenant les MSE.
+    somme_prevu= 0
+    somme_reel= 0
+    compt=0
+    dict_erreur={}
 
-    return {}
+    for key in model_dict:
+        somme_prevu= 0
+        somme_reel= 0
+        compt=0
+        for couple in model_dict[key]:
+            somme_prevu+=(couple[1])**2
+            somme_reel+=(couple[0])**2
+            compt+=1
+        
+        moyenne_prevu=(somme_prevu/compt)**0.5
+        moyenne_reel=(somme_reel/compt)**0.5
+        dict_erreur[key]=(moyenne_reel,moyenne_prevu)
+
+    return dict_erreur
 
 
 def main() -> None:

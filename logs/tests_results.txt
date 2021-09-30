@@ -1,21 +1,9 @@
 test_color_name_to_hex (__main__.TestExercice) ... ok
-test_compute_mse (__main__.TestExercice) ... FAIL
+test_compute_mse (__main__.TestExercice) ... ok
 test_create_list (__main__.TestExercice) ... ok
 test_list_to_dict (__main__.TestExercice) ... ok
-
-======================================================================
-FAIL: test_compute_mse (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 62, in test_compute_mse
-    self.assertDictEqual(
-AssertionError: {'LR': (60.276031720742864, 62.438770007103756),[88 chars]825)} != {'LR': 220.6, 'DNN': 14.0, 'RF': 1681.8}
-+ {'DNN': 14.0, 'LR': 220.6, 'RF': 1681.8}
-- {'DNN': (50.2035855293225, 50.789762748018425),
--  'LR': (60.276031720742864, 62.438770007103756),
--  'RF': (51.68752267230458, 33.27160951922825)} : Erreur dans le calcul des MSE
 
 ----------------------------------------------------------------------
 Ran 4 tests in 0.002s
 
-FAILED (failures=1)
+OK

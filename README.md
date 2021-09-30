@@ -4,14 +4,15 @@
 
 
 
+
 ## Résultats
 Score | Critères
 --- | ---
 1/1 | color_name_to_hex
-0/1 | compute_mse
+1/1 | compute_mse
 1/1 | create_list
 1/1 | list_to_dict
-3/4 | **Total**
+4/4 | **Total**
 
 [Voir détails](./logs/tests_results.txt) | [Rafraîchir](../../)
 # Exercices en vrac (chapitre 6.2)

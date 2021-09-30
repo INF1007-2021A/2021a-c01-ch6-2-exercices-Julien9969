@@ -30,7 +30,7 @@ def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
     list_entier=[]
 
-    for nb in range(0, 10001):
+    for nb in range(0, 10000):
         if nb>15 and nb <350:
             continue
 

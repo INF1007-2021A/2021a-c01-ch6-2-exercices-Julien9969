@@ -31,7 +31,7 @@ def create_list() -> list:
     list_entier=[]
 
     for nb in range(0, 10000):
-        if nb>15 and nb <350:
+        if nb>=15 and nb <=350:
             continue
 
         list_entier.append(nb)

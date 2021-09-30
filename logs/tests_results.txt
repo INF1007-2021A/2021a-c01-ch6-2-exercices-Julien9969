@@ -21,15 +21,19 @@ FAIL: test_create_list (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 48, in test_create_list
     self.assertListEqual(
-AssertionError: Lists differ: [0, 1[57234 chars]0, 9991, 9992, 9993, 9994, 9995, 9996, 9997, 9998, 9999, 10000] != [0, 1[57234 chars]0, 9991, 9992, 9993, 9994, 9995, 9996, 9997, 9998, 9999]
+AssertionError: Lists differ: [0, 1[41 chars] 14, 15, 350, 351, 352, 353, 354, 355, 356, 35[57214 chars]0000] != [0, 1[41 chars] 14, 351, 352, 353, 354, 355, 356, 357, 358, 3[57198 chars]9999]
 
-First list contains 1 additional elements.
+First differing element 15:
+15
+351
+
+First list contains 3 additional elements.
 First extra element 9664:
-10000
+9998
 
-Diff is 86326 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
+Diff is 86341 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.042s
+Ran 4 tests in 0.045s
 
 FAILED (failures=2)
